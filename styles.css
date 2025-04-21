@@ -1,0 +1,24 @@
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        input {
+            padding: 10px;
+            width: 250px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        #qr-container {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        canvas {
+            border: 1px solid #ccc;
+        }

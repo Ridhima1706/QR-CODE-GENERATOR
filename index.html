@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp QR Code Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>WhatsApp QR Code Generator</h2>
+    <p>Enter your WhatsApp number (with country code, e.g., 919876543210):</p>
+    <input type="text" id="whatsappNumber" placeholder="Enter number">
+    <button onclick="generateQR()">Generate QR Code</button>
+    <button onclick="downloadPNG()" id="downloadPngBtn" style="display:none;">Download as PNG</button>
+    <button onclick="downloadPDF()" id="downloadPdfBtn" style="display:none;">Download as PDF</button>
+    
+    <div id="qr-container" style="display:none;">
+        <canvas id="qrCanvas" width="300" height="300"></canvas>
+    </div>
+
+    <script src="app.js">     
+    </script>
+</body>
+</html>
