@@ -5,7 +5,7 @@ function generateQR() {
     return;
   }
 
-  let message = encodeURIComponent("Hello! How are you?");
+  let message = encodeURIComponent("Hi! How it's going?");
   let whatsappLink = `https://wa.me/${number}?text=${message}`;
 
   let canvas = document.getElementById("qrCanvas");
